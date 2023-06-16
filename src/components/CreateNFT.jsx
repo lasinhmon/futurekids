@@ -8,6 +8,7 @@ import {
 } from "../store";
 import { create } from "ipfs-http-client";
 import { mintNFT } from "../Blockchain.Services";
+import blockchain from "../assets/FTK_Footer.png";
 const imgHero =
     "https://images.cointelegraph.com/images/1434_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS91cGxvYWRzLzIwMjEtMDYvNGE4NmNmOWQtODM2Mi00YmVhLThiMzctZDEyODAxNjUxZTE1LmpwZWc=.jpg";
 //
@@ -104,7 +105,7 @@ const CreateNFT = () => {
                         <div className="shrink-0 h-20 w-20 rounded-xl overflow-hidden">
                             <img
                                 className="h-full w-full object-cover cursor-pointer"
-                                src={imgBase64 || imgHero}
+                                src={imgBase64 || blockchain}
                                 alt="NFT"
                             />
                         </div>
