@@ -7,9 +7,8 @@ import {
     useGlobalState,
 } from "../store";
 import { updateNFT } from "../Blockchain.Services";
-const imgHero =
-    "https://images.cointelegraph.com/images/1434_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS91cGxvYWRzLzIwMjEtMDYvNGE4NmNmOWQtODM2Mi00YmVhLThiMzctZDEyODAxNjUxZTE1LmpwZWc=.jpg";
 
+import blockchain from "../assets/FTK_Footer.png";
 const UpdateNFT = () => {
     const [modal] = useGlobalState("updateModal");
     const [nft] = useGlobalState("nft");
@@ -51,7 +50,7 @@ const UpdateNFT = () => {
                     className="flex flex-col"
                 >
                     <div className="flex justify-between items-center text-black">
-                        <p className="font-semibold">Candy NFT</p>
+                        <p className="font-semibold">Change price</p>
                         <button
                             type="button"
                             onClick={closeModal}
@@ -64,17 +63,17 @@ const UpdateNFT = () => {
                         <div className="shrink-0 h-20 w-20 rounded-xl overflow-hidden">
                             <img
                                 className="h-full w-full object-cover cursor-pointer"
-                                src={imgHero}
+                                src={blockchain}
                                 alt="NFT"
                             />
                         </div>
                     </div>
 
-                    <div className="flex justify-between items-center bg-gray-800 rounded-xl mt-5">
+                    <div className="flex justify-between items-center bg-white rounded-xl mt-5">
                         <input
                             type="number"
                             className="block w-full text-sm 
-                                text-slate-500 
+                                text-black 
                                 focus:outline-none 
                                 cursor-pointer focus:ring-0
                                 bg-transparent border-0"
