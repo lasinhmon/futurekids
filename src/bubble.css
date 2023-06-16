@@ -1,0 +1,164 @@
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-smooth: antialiased;
+    text-rendering: optimizeLegibility;
+    box-sizing: border-box;
+
+    /* variables */
+    /* color */
+    --yellow: #ffcc00;
+    --yellow-hover: #ffcc66;
+    --blue: #1f373d;
+    --gray: #d9d9d9;
+    --black: #080606;
+    --sdown: #818181;
+    --gray-contact: #919eb1;
+    --gray-footer-list-title: #637583;
+    --fullscreen: #EDEDEF;
+    --purple: #8C8BDA;
+
+    /* size */
+    --height-header: 66px;
+    --width-gap: 127px;
+    --width-container: 1140px;
+
+    /* animation */
+    --time-transition: 0.4s;
+
+
+
+    scroll-behavior: smooth;
+}
+
+
+.container {
+    /* max-width: var(--width-container); */
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+
+    height: 100%;
+}
+
+
+
+
+.graycir {
+    background-color: var(--gray);
+        border-radius: 32px;
+}
+
+.wrapper {
+    padding: 0 100px;
+    height: 100%;
+}
+.what{
+    height: 100%;
+}
+.what_in{
+    margin-top: 40px;
+    justify-content: center;
+}
+
+
+.what .what__left {
+    width: 50%;
+    height: 100%;
+
+   
+}
+
+.what .what__left-heading {
+    padding-top: 32px;
+}
+
+.what .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.what .what__bubble {
+    position: relative;
+}
+
+.what .what__bubble-item {
+    border-radius: 50%;
+    background: linear-gradient(152.73deg, rgba(140, 139, 218, 0.74) 17.01%, rgba(214, 212, 253, 0.52) 118.54%);
+    position: absolute;
+
+    
+}
+
+.what .what__bubble-item  p {
+   text-align: center;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    font-size: 23px;
+
+}
+
+.what .green {
+    background: linear-gradient(141.65deg, #B6D2CB 5%, rgba(177, 213, 215, 0.75) 97.58%);
+
+}
+
+.what .bub1 {
+    width: 150px;
+    height: 157.6px;
+    bottom: 50px;
+    right: 500px;
+    background: linear-gradient(213.22deg, #8C8BDA 2.67%, #D6D4FD 82.76%);
+}
+
+.what  .bub2 {
+    width: 203px;
+    height: 203.17px;
+    right: 180px;
+    bottom: -20px;
+    background: linear-gradient(152.09deg, #9FC6C8 11.73%, rgba(196, 237, 245, 0.68) 95.45%);
+}
+
+.what .bub3 {
+    width: 230px;
+    height: 236.77px;
+    right: 330px;
+    /* bottom: 0; */
+    top: -12px;
+    background: linear-gradient(152.09deg, #9FC6C8 11.73%, rgba(196, 237, 245, 0.68) 95.45%);
+}
+.bongbong{
+    height: 300px;
+}
+.what .bub4 {
+    width: 290px;
+    height: 290px;
+    right: -84px;
+    bottom: -190px;
+    background: linear-gradient(152.73deg, rgba(140, 139, 218, 0.74) 17.01%, rgba(214, 212, 253, 0.52) 118.54%);
+transform: matrix(1, -0.01, 0.01, 1, 0, 0);
+}
+.member__list-item {
+    height: 100%;
+    width: 100%;
+    margin: 72px 32px;
+    cursor: pointer;
+    position: relative;
+    padding-top: 140px;
+    text-align: center;
+    /* flex: 1 0 30%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: linear-gradient(208.66deg, rgba(140, 139, 218, 0.8) -8.86%, rgba(159, 198, 200, 0.8) 161.81%);
+    border-radius: 24px;
+}
+
+
+
