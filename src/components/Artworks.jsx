@@ -58,7 +58,7 @@ const Card = ({ nft }) => {
                 <div className="flex flex-col">
                     <small className="text-black text-xs">Current Price</small>
                     <p className="text-black text-sm font-semibold">
-                        {nft.cost} ETH
+                        {nft.cost} xDAI
                     </p>
                 </div>
                 <button

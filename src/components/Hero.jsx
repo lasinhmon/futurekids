@@ -90,7 +90,7 @@ const Hero = () => {
                                     <p>10.000 artworks</p>
                                 </div>
                                 <div class="what__bubble-item green bub2">
-                                    <p>1000 ETH donated</p>
+                                    <p>10000 USD donated</p>
                                 </div>
                                 <div class="what__bubble-item green bub3">
                                     <p>1.000.000 kids</p>

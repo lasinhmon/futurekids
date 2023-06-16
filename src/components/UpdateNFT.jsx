@@ -78,7 +78,7 @@ const UpdateNFT = () => {
                                 focus:outline-none 
                                 cursor-pointer focus:ring-0
                                 bg-transparent border-0"
-                            placeholder="Price (ETH)"
+                            placeholder="Price (xDAI)"
                             min={0.01}
                             step={0.01}
                             name="price"

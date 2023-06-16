@@ -21,12 +21,15 @@ const ShowNFT = () => {
     };
 
     const handlePurchase = async () => {
-        // setGlobalState("showModal", "scale-0");
-        // setLoadingMsg("Initializing purchase...");
-
+        setGlobalState("showModal", "scale-0");
+        setGlobalState("loading", {
+            show: true,
+            msg: "Initializing NFT transfer...",
+        });
         try {
-            setLoadingMsg("Purchasing, awaiting Metamask approval...");
             await buyNFT(nft);
+            setLoadingMsg("Purchasing, awaiting Metamask approval...");
+
             setAlert("NFT purchased...");
             // setAlert("Transfer completed...", "green");
             window.location.reload();
@@ -94,7 +97,7 @@ const ShowNFT = () => {
                             <div className="flex flex-col text-black">
                                 <small className="text-xs">Current Price</small>
                                 <p className="text-sm font-semibold">
-                                    {nft?.cost} ETH
+                                    {nft?.cost} xDAI
                                 </p>
                             </div>
                         </div>
