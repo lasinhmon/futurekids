@@ -64,10 +64,10 @@ const Hero = () => {
                 </div>
             </div>
             <div className="bongbong">
-                <section class="what" id="whatid">
-                    <div class="container">
-                        <div class="wrapper graycir">
-                            <div class="what__left">
+                <section className="what" id="whatid">
+                    <div className="container">
+                        <div className="wrapper graycir">
+                            <div className="what__left">
                                 <div className="what_in">
                                     <h1 className="text-black text-4xl">
                                         What we do?
@@ -85,17 +85,17 @@ const Hero = () => {
                                     </p>
                                 </div>
                             </div>
-                            <div class="what__bubble">
-                                <div class="what__bubble-item bub1">
+                            <div className="what__bubble">
+                                <div className="what__bubble-item bub1">
                                     <p>10.000 artworks</p>
                                 </div>
-                                <div class="what__bubble-item green bub2">
+                                <div className="what__bubble-item green bub2">
                                     <p>10000 USD donated</p>
                                 </div>
-                                <div class="what__bubble-item green bub3">
+                                <div className="what__bubble-item green bub3">
                                     <p>1.000.000 kids</p>
                                 </div>
-                                <div class="what__bubble-item bub4">
+                                <div className="what__bubble-item bub4">
                                     <p>100% public transactions</p>
                                 </div>
                             </div>

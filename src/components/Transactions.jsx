@@ -51,13 +51,17 @@ const Transaction = ({ tx }) => (
             <h4 className="text-sm ">NFT Transfered</h4>
             <small className="flex justify-start items-center">
                 <span className="mr-1">Received by</span>
-                <a className="text-pink-500 mr-2" href="#" target="_blank">
+                <a
+                    className="text-pink-500 mr-2"
+                    href={`https://blockscout.com/gnosis/chiado/address/${tx.owner}`}
+                    target="_blank"
+                >
                     {truncate(tx.owner, 4, 4, 11)}
                 </a>
                 <MdOpenInNew />
             </small>
         </div>
-        <p className="text-sm font-medium">{tx.cost} ETH</p>
+        <p className="text-sm font-medium">{tx.cost} xDAI</p>
     </div>
 );
 export default Transactions;

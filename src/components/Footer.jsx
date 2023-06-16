@@ -12,7 +12,7 @@ const Footer = () => (
                 </div>
                 <div className="pl-16 text-2xl leading-7">
                     <p className="mx-2">
-                        215 Dien Bien Phu Street, Ward 2, <br />
+                        215 Dien Bien Phu Street, Ward 15, <br />
                         Binh Thanh District, Ho Chi Minh City, VietNam
                     </p>
                 </div>

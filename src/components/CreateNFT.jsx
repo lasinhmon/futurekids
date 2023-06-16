@@ -36,6 +36,7 @@ const CreateNFT = () => {
     const [price, setPrice] = useState("");
     const [fileUrl, setFileUrl] = useState("");
     const [imgBase64, setImgBase64] = useState(null);
+
     const handleSubmit = async (e) => {
         e.preventDefault();
         console.log("Hello from inside CreateNFT");

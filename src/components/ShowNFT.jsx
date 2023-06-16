@@ -30,13 +30,9 @@ const ShowNFT = () => {
             await buyNFT(nft);
             setLoadingMsg("Purchasing, awaiting Metamask approval...");
             //tat k mua
-            if (transactionReceipt.status) {
-                setAlert("NFT purchased...");
-                // setAlert("Transfer completed...", "green");
-                window.location.reload();
-            } else {
-                setAlert("See you later...");
-            }
+            setAlert("NFT purchased...");
+            // setAlert("Transfer completed...", "green");
+            window.location.reload();
 
             // setAlert("Transfer completed...", "green");
         } catch (error) {
@@ -55,7 +51,7 @@ const ShowNFT = () => {
             <div className="bg-[#D4E3E5] shadow-xl shadow-[#656263] rounded-xl w-11/12 md:w-2/5 h-7/12 p-6">
                 <div className="flex flex-col">
                     <div className="flex justify-between items-center text-black">
-                        <p className="font-semibold">NFT</p>
+                        <p className="font-semibold">Buy NFT</p>
                         <button
                             type="button"
                             onClick={closeModal}
