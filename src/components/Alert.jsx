@@ -6,7 +6,7 @@ const Alert = () => {
     const [alert] = useGlobalState("alert");
     return (
         <div
-            className={`fixed top-0 left-0 w-screen h-screen flex items-center justify-center bg-black bg-opacity-50 transform transition-transform duration-300 ${
+            className={`z-10 fixed top-0 left-0 w-screen h-screen flex items-center justify-center bg-black bg-opacity-50 transform transition-transform duration-300 ${
                 alert.show ? "scale-100" : "scale-0"
             }`}
         >
@@ -18,7 +18,7 @@ const Alert = () => {
                 ) : (
                     <BsCheck2Circle className="text-green-600 text-4xl" />
                 )}
-                <p className="text-white">{alert.msg}</p>
+                <p className="text-black">{alert.msg}</p>
             </div>
         </div>
     );

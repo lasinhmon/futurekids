@@ -54,7 +54,7 @@ const Card = ({ nft }) => {
             />
             <h4 className="text-black font-semibold">{nft.title}</h4>
             <p className="text-black-400 text-sm my-1">{nft.description}</p>
-            <div className="flex justify-between items-center mt-3 text-white">
+            <div className="flex justify-between items-center mt-3 text-black">
                 <div className="flex flex-col">
                     <small className="text-black text-xs">Current Price</small>
                     <p className="text-black text-sm font-semibold">

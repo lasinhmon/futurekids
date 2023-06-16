@@ -12,12 +12,7 @@ const Header = () => {
                     alt="Logo"
                 />
             </div>
-            <ul className="md:flex-[0.5]  text-1xl text-black md:flex hidden list-none justify-between items-center flex-initial">
-                <li className="mx-4 cursor-pointer">Market</li>
-                <li className="mx-4 cursor-pointer">Artist</li>
-                <li className="mx-4 cursor-pointer">Features</li>
-                <li className="mx-4 cursor-pointer">Community</li>
-            </ul>
+            <ul className="md:flex-[0.5]  text-1xl text-black md:flex hidden list-none justify-between items-center flex-initial"></ul>
             {connectedAccount ? (
                 <button className="shadow-md shadow-black text-black button-color hover:button-color text-1xl p-2 rounded-full">
                     {truncate(connectedAccount, 4, 4, 11)}

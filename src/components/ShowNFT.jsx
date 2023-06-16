@@ -29,10 +29,16 @@ const ShowNFT = () => {
         try {
             await buyNFT(nft);
             setLoadingMsg("Purchasing, awaiting Metamask approval...");
+            //tat k mua
+            if (transactionReceipt.status) {
+                setAlert("NFT purchased...");
+                // setAlert("Transfer completed...", "green");
+                window.location.reload();
+            } else {
+                setAlert("See you later...");
+            }
 
-            setAlert("NFT purchased...");
             // setAlert("Transfer completed...", "green");
-            window.location.reload();
         } catch (error) {
             console.log("Error transfering NFT: ", error);
             setAlert("Purchase failed...", "red");
@@ -44,7 +50,7 @@ const ShowNFT = () => {
 
     return (
         <div
-            className={`fixed top-0 left-0 w-screen h-screen flex items-center justify-center bg-black bg-opacity-50 transform transition-transform duration-300 ${modal}`}
+            className={`z-10 fixed top-0 left-0 w-screen h-screen flex items-center justify-center bg-black bg-opacity-50 transform transition-transform duration-300 ${modal}`}
         >
             <div className="bg-[#D4E3E5] shadow-xl shadow-[#656263] rounded-xl w-11/12 md:w-2/5 h-7/12 p-6">
                 <div className="flex flex-col">
@@ -83,7 +89,7 @@ const ShowNFT = () => {
                                     size={50}
                                 />
                                 <div className="flex flex-col justify-center items-start">
-                                    <small className="text-white font-bold">
+                                    <small className="text-black font-bold">
                                         @Owner
                                     </small>
                                     <small className="text-pink-800 font-semibold">

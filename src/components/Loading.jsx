@@ -4,7 +4,7 @@ const Loading = () => {
     const [loading] = useGlobalState("loading");
     return (
         <div
-            className={`fixed top-0 left-0 w-screen h-screen flex items-center justify-center bg-black bg-opacity-50 transform transition-transform duration-300 ${
+            className={`z-10 fixed top-0 left-0 w-screen h-screen flex items-center justify-center bg-black bg-opacity-50 transform transition-transform duration-300 ${
                 loading.show ? "scale-100" : "scale-0"
             }`}
         >
