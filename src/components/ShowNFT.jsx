@@ -55,7 +55,7 @@ const ShowNFT = () => {
             <div className="bg-[#D4E3E5] shadow-xl shadow-[#656263] rounded-xl w-11/12 md:w-2/5 h-7/12 p-6">
                 <div className="flex flex-col">
                     <div className="flex justify-between items-center text-black">
-                        <p className="font-semibold">Buy NFT</p>
+                        <p className="font-semibold">NFT</p>
                         <button
                             type="button"
                             onClick={closeModal}
